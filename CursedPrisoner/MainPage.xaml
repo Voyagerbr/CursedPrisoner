@@ -8,13 +8,21 @@
              <Grid>
                 <Grid.RowDefinitions>
                      <RowDefinition Height="*"/>
-                     <RowDefinition Height="70"/>
-                     <RowDefinition Height="70"/>
+                     <RowDefinition Height="60"/>
+                     <RowDefinition Height="60"/>
                 </Grid.RowDefinitions>
-                <Label Text="Hello World"
-                        Grid.Row="1"
-                        HorizontalOptions="CenterAndExpand"
-                        VerticalOptions="CenterAndExpand"/>
+                <Image Source="prison.png"
+                       Aspect="AspectFill"
+                       Grid.RowSpan="3"/>               
+                <Label Text="Cursed Prisoner"
+                        Grid.Row="0"
+                        FontSize="50"
+                        FontFamily="ArcadeItalic" 
+                        TextColor="White"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                      
+
              </Grid>
 
     </ScrollView>
