@@ -11,7 +11,10 @@
                      <RowDefinition Height="70"/>
                      <RowDefinition Height="70"/>
                 </Grid.RowDefinitions>
-                
+                <Label Text="Hello World"
+                        Grid.Row="1"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"/>
              </Grid>
 
     </ScrollView>
