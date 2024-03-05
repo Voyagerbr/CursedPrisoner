@@ -5,36 +5,41 @@
              Shell.NavBarIsVisible="false">
 
     <ScrollView>
-             <Grid
-             Margin="20, 0">
+             <Grid>
                 <Grid.RowDefinitions>
                      <RowDefinition Height="*"/>
-                     <RowDefinition Height="60"/>
-                     <RowDefinition Height="60"/>
+                     <RowDefinition Height="90"/>
+                     <RowDefinition Height="90"/>
                 </Grid.RowDefinitions>
                 <Image Source="prison.png"
                        Aspect="AspectFill"
                        Grid.RowSpan="3"/>
                 <Label Text="Cursed Prisoner"
                         Grid.Row="0"
-                        FontSize="50"
+                        FontSize="70"
                         FontFamily="ArcadeItalic" 
-                        TextColor="White"
+                        TextColor="#c9c7c1"
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
                         HorizontalTextAlignment="Center"/>
 
                <Button Text="Jogar"
-                        HorizontalOptions="CenterAndExpand"
+                        HorizontalOptions="FillAndExpand"
                         Grid.Row="1"
-                        x:name="ButtonJogar"
-                        CornerRadius="20"/>
+                        FontSize="22"
+                        x:Name="ButtonJogar"
+                        CornerRadius="25"
+                        Margin="10"
+                        BackgroundColor="#e6c09a"/>
                         
                <Button Text="Créditos"
-                        HorizontalOptions="CenterAndExpand"
+                        HorizontalOptions="FillAndExpand"
                         Grid.Row="2"
-                        x:name="ButtonCreditos"
-                        CornerRadius="20"/>
+                        FontSize="22"
+                        x:Name="ButtonCreditos"
+                        CornerRadius="25"
+                        Margin="30, 10"
+                        BackgroundColor="#e6c09a"/>
 
              </Grid>
 
