@@ -5,7 +5,8 @@
              Shell.NavBarIsVisible="false">
 
     <ScrollView>
-             <Grid>
+             <Grid
+             Margin="20, 0">
                 <Grid.RowDefinitions>
                      <RowDefinition Height="*"/>
                      <RowDefinition Height="60"/>
@@ -13,15 +14,27 @@
                 </Grid.RowDefinitions>
                 <Image Source="prison.png"
                        Aspect="AspectFill"
-                       Grid.RowSpan="3"/>               
+                       Grid.RowSpan="3"/>
                 <Label Text="Cursed Prisoner"
                         Grid.Row="0"
                         FontSize="50"
                         FontFamily="ArcadeItalic" 
                         TextColor="White"
                         HorizontalOptions="Center"
-                        VerticalOptions="Center"/>
-                      
+                        VerticalOptions="Center"
+                        HorizontalTextAlignment="Center"/>
+
+               <Button Text="Jogar"
+                        HorizontalOptions="CenterAndExpand"
+                        Grid.Row="1"
+                        x:name="ButtonJogar"
+                        CornerRadius="20"/>
+                        
+               <Button Text="Créditos"
+                        HorizontalOptions="CenterAndExpand"
+                        Grid.Row="2"
+                        x:name="ButtonCreditos"
+                        CornerRadius="20"/>
 
              </Grid>
 
