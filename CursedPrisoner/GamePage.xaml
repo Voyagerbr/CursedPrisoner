@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CursedPrisoner.GamePage"
+             Shell.NavBarIsVisible="false"
+             BackgroundColor="White">
+<Frame Margin="10,20"
+           CornerRadius="20"
+           BackgroundColor="#3f343a"
+           HorizontalOptions="Center">
+<Label Text="Hello World"
+              TextColor="White"
+              FontSize="20"
+              FontFamily="Garaj"
+              FontAttributes="Bold"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"
+              HorizontalTextAlignment="Center"/>
+
+</Frame>
+    
+</ContentPage>

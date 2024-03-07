@@ -2,14 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CursedPrisoner.MainPage"
-             Shell.NavBarIsVisible="false">
+             Shell.NavBarIsVisible="false"
+             BackgroundColor="White">
 
-    <ScrollView>
              <Grid>
                 <Grid.RowDefinitions>
                      <RowDefinition Height="*"/>
                      <RowDefinition Height="90"/>
-                     <RowDefinition Height="90"/>
+                     <RowDefinition Height="80"/>
                 </Grid.RowDefinitions>
                 <Image Source="prison.png"
                        Aspect="AspectFill"
@@ -17,32 +17,83 @@
                 <Label Text="Cursed Prisoner"
                         Grid.Row="0"
                         FontSize="70"
-                        FontFamily="ArcadeItalic" 
+                        FontFamily="Garaj" 
                         TextColor="#c9c7c1"
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
                         HorizontalTextAlignment="Center"/>
 
                <Button Text="Jogar"
+                        Clicked="ButtonStartIsClicked"
                         HorizontalOptions="FillAndExpand"
+                        BorderColor="#c4b7b7"
+                        BorderWidth="2"
                         Grid.Row="1"
                         FontSize="22"
+                        TextColor="#c9c7c1"
                         x:Name="ButtonJogar"
-                        CornerRadius="25"
+                        CornerRadius="30"
                         Margin="10"
-                        BackgroundColor="#e6c09a"/>
+                        BackgroundColor="#2b2b2b"/>
                         
                <Button Text="Créditos"
+                        BorderColor="#c4b7b7"
+                        BorderWidth="2"
+                        Clicked="ButtonCreditIsClicked"
                         HorizontalOptions="FillAndExpand"
+                        TextColor="#c9c7c1"
                         Grid.Row="2"
                         FontSize="22"
                         x:Name="ButtonCreditos"
-                        CornerRadius="25"
-                        Margin="30, 10"
-                        BackgroundColor="#e6c09a"/>
+                        CornerRadius="30"
+                        Margin="20,15"
+                        BackgroundColor="#000000"/>
 
-             </Grid>
+    <!-- ............................................................Frame Créditos...............................................................................................-->
+          <Frame x:Name="creditsFrame"
+           IsVisible="false"
+           Margin="10,20"
+           CornerRadius="20"
+           BackgroundColor="#3f343a"
+           HorizontalOptions="Center"
+           Grid.RowSpan="3">
 
-    </ScrollView>
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="90"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Label Text="Créditos"
+              TextColor="White"
+              Margin="20"
+              FontSize="40"
+              FontFamily="Garaj"
+              FontAttributes="Bold"
+              HorizontalOptions="Center"
+              HorizontalTextAlignment="Center"
+              Grid.Row="0"/>
+
+        <Label Text="Projeto Desenvolvido por Nicolas de Almeida e Rayssa Cardoso, para a matéria de Desenvolvimento de Sistemas, visando testar os conhecimentos em C# e XAML"
+               TextColor="White"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="FillAndExpand"
+               FontSize="25"
+               Grid.Row="1"/>
+
+        <Button Text="Voltar"
+                Clicked="ButtonBackMenuIsClicked"
+                CornerRadius="25"
+                 BorderColor="#c4b7b7"
+                 BorderWidth="2"
+                BackgroundColor="#2b2b2b"
+                TextColor="White"
+                FontSize="18"
+                Grid.Row="2"/>
+      </Grid>
+    </Frame>
+     <!-- ............................................................Fim Frame Créditos...............................................................................................-->
+  </Grid>
 
 </ContentPage>

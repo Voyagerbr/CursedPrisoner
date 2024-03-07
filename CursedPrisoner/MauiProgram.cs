@@ -15,6 +15,7 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 				fonts.AddFont("ARCADE.otf", "Arcade");
 				fonts.AddFont("ARCADE-Italic.otf", "ArcadeItalic");
+				fonts.AddFont("GajrajOne-Regular.ttf", "Garaj");
 			});
 
 #if DEBUG
