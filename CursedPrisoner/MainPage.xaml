@@ -34,7 +34,8 @@
                         x:Name="ButtonJogar"
                         CornerRadius="30"
                         Margin="10"
-                        BackgroundColor="#2b2b2b"/>
+                        BackgroundColor="#2b2b2b"
+                        HeightRequest="80"/>
                         
                <Button Text="Créditos"
                         BorderColor="#c4b7b7"
@@ -47,7 +48,8 @@
                         x:Name="ButtonCreditos"
                         CornerRadius="30"
                         Margin="20,15"
-                        BackgroundColor="#000000"/>
+                        BackgroundColor="#000000"
+                        HeightRequest="70"/>
 
     <!-- ............................................................Frame Créditos...............................................................................................-->
           <Frame x:Name="creditsFrame"

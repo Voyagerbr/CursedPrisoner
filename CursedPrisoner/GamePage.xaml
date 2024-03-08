@@ -4,19 +4,22 @@
              x:Class="CursedPrisoner.GamePage"
              Shell.NavBarIsVisible="false"
              BackgroundColor="White">
-<Frame Margin="10,20"
-           CornerRadius="20"
-           BackgroundColor="#3f343a"
-           HorizontalOptions="Center">
-<Label Text="Hello World"
-              TextColor="White"
-              FontSize="20"
-              FontFamily="Garaj"
-              FontAttributes="Bold"
-              HorizontalOptions="FillAndExpand"
-              VerticalOptions="Center"
-              HorizontalTextAlignment="Center"/>
-
-</Frame>
-    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <!-- Frame Página Principal -->
+        <Frame Margin="10,20"
+            x:Name="frameGamePage"
+            CornerRadius="20"
+            BackgroundColor="#3f343a"
+            HorizontalOptions="FillAndExpand">
+            <Label  x:Name="labelText"
+                    TextColor="White"/>
+        </Frame>
+        <!-- Fim do Frame que fica com a Label-->
+    </Grid>  
 </ContentPage>
