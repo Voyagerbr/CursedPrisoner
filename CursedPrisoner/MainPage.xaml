@@ -76,12 +76,12 @@
               HorizontalTextAlignment="Center"
               Grid.Row="0"/>
 
-        <Label Text="Projeto Desenvolvido por Nicolas de Almeida e Rayssa Cardoso, para a matéria de Desenvolvimento de Sistemas, visando testar os conhecimentos em C# e XAML"
+        <Label Text="Projeto Desenvolvido por Nicolas de Almeida, para a matéria de Desenvolvimento de Sistemas, visando testar os conhecimentos em C# e XAML"
                TextColor="White"
                HorizontalOptions="Center"
                HorizontalTextAlignment="Center"
                VerticalOptions="FillAndExpand"
-               FontSize="25"
+               FontSize="35"
                Grid.Row="1"/>
 
         <Button Text="Voltar"

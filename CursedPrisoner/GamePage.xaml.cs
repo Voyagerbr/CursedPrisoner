@@ -8,6 +8,6 @@ public partial class GamePage : ContentPage
 	{
 		InitializeComponent();
 	}
-
+ 
     
 }
