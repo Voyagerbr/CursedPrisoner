@@ -13,25 +13,27 @@
         </Grid.RowDefinitions>
 
         <!-- Frame Página Principal -->
-        <Frame Margin="10,20"
+        <Frame Margin="10"
             x:Name="frameGamePage"
-            CornerRadius="20"
+            CornerRadius="30"
             BackgroundColor="#3f343a"
             Grid.Row="0"
             HorizontalOptions="FillAndExpand">
+
             <Label  x:Name="labelText"
-                    TextColor="White"/>
+                    TextColor="White"
+                    Grid.Row="0"/>
         </Frame>
         <!-- Fim do Frame que fica com a Label-->
     <Button Text="Próximo"
            x:Name="NextButton"
             HorizontalOptions="FillAndExpand"
+            Clicked="NextButtonIsClickedit"
             BorderColor="#c4b7b7"
             BorderWidth="2"
             Grid.Row="1"
             FontSize="22"
             TextColor="#c9c7c1"
-            x:Name="NextButton"
             CornerRadius="30"
             BackgroundColor="#2b2b2b"
             HeightRequest="60"/>
