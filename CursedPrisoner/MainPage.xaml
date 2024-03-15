@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CursedPrisoner.MainPage"
              Shell.NavBarIsVisible="false"
-             BackgroundColor="White">
+             BackgroundColor="#aba59f">
 
              <Grid>
                 <Grid.RowDefinitions>
