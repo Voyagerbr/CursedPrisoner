@@ -14,13 +14,30 @@ public partial class GamePage : ContentPage
 			HasAnswer=false,
 		});
 		
+
 		history.Add(new HistorySteps()
+	{
+		IdPage=1,
+		Texts="Após alguns minutos caminhando por aquela floresta úmida, escura e fedida, você encontra uma encruzilhada, que se separa em duas direções. Olhando o caminho à esquerda parece claro e leva a uma cidade, dizem que lá é bonito. Olhando à direita vê-se um bosque escuro e lá há uma pequena aldeia. Você pretende seguir qual caminho?",
+		HasAnswer=true,
+		Answer01="Esquerda",
+		Answer02="Direita",
+		IdLevelAnswer01=2,
+		IdLevelAnswer02=3
+	});
+	history.Add (new HistorySteps()
+	{
+		IdPage=2,
+		Texts="Após algumas horas andando, chegaste a Piddletown, as pessoas da cidade parecem já te reconhecer e oferecem alguns equipamentos. Em específico, uma lamparina e um cutelo.Qual você vai pegar",
+		HasAnswer=true,
+		Answer01="Lamparina",
+		Answer02="Cutelo"
+	});
+	history.Add(new HistorySteps()
 		{
-			IdPage=1,
-			Texts="Teste daora",
-			HasAnswer=true,
-			Answer01="Esquerda",
-			Answer02="Direita"
+			IdPage=3,
+			Texts="Após alguns minutos andando, você se depara com uma criatura estranha que fala algumas palavras em uma língua estrangeira em seu ouvido, você tenta a atacar mas ela devia e te dá uma espada de presente e fala para fazer bom uso dela",
+			HasAnswer=false
 		});
 		Start();
 	}
@@ -58,5 +75,14 @@ public partial class GamePage : ContentPage
 		var nextId = CurrentHistoryStep.IdPage + 1;
     	ChangeCurrentStoryStep(nextId);
 	}
-	
+	void Button01IsClicked(object sender, EventArgs args)
+  {
+	var IdButton01 = CurrentHistoryStep.IdLevelAnswer01;
+    ChangeCurrentStoryStep(IdButton01);
+  }
+  void Button02IsClicked(object sender, EventArgs args)
+  {
+	var IdButton02 = CurrentHistoryStep.IdLevelAnswer02;
+    ChangeCurrentStoryStep(IdButton02);
+  }
 }

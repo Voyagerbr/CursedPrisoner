@@ -22,13 +22,15 @@
 
             <Label  x:Name="labelText"
                     TextColor="White"
+                    FontSize="22
+                    "
                     Grid.Row="0"/>
         </Frame>
         <!-- Fim do Frame que fica com a Label-->
     <Button Text="Próximo"
            x:Name="NextButton"
             HorizontalOptions="FillAndExpand"
-            Clicked="NextButtonIsClickedit"
+            Clicked="NextButtonIsClicked"
             BorderColor="#c4b7b7"
             BorderWidth="2"
             Grid.Row="1"
@@ -39,19 +41,20 @@
             HeightRequest="60"/>
 
     <Button x:Name="Button01"
+            Clicked="Button01IsClicked"
             HorizontalOptions="FillAndExpand"
             BorderColor="#c4b7b7"
             BorderWidth="2"
             Grid.Row="2"
             FontSize="22"
             TextColor="#c9c7c1"
-           
             CornerRadius="30"
             BackgroundColor="#2b2b2b"
              HeightRequest="60"/>
 
     <Button x:Name="Button02"
             HorizontalOptions="FillAndExpand"
+            Clicked="Button02IsClicked"
             BorderColor="#c4b7b7"
             BorderWidth="3"
             Grid.Row="3"
