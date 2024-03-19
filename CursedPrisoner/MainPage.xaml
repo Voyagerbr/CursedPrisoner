@@ -69,7 +69,7 @@
         <Label Text="Créditos"
               TextColor="White"
               Margin="20"
-              FontSize="40"
+              FontSize="35"
               FontFamily="Garaj"
               FontAttributes="Bold"
               HorizontalOptions="Center"
@@ -81,7 +81,7 @@
                HorizontalOptions="Center"
                HorizontalTextAlignment="Center"
                VerticalOptions="FillAndExpand"
-               FontSize="35"
+               FontSize="32"
                Grid.Row="1"/>
 
         <Button Text="Voltar"
